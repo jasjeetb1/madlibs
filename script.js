@@ -1,0 +1,14 @@
+function madlibs() {
+  let word = [document.getElementById('0').value,document.getElementById('1').value, document.getElementById('2').value, document.getElementById('3').value, document.getElementById('4').value, document.getElementById('5').value, document.getElementById('6').value, document.getElementById('7').value, document.getElementById('8').value, document.getElementById('9').value, document.getElementById('10').value, document.getElementById('11').value,document.getElementById('12').value, document.getElementById('13').value, document.getElementById('14').value, document.getElementById('15').value, document.getElementById('16').value, document.getElementById('17').value, document.getElementById('18').value, document.getElementById('19').value, document.getElementById('20').value, document.getElementById('21').value] 
+
+let story = `Once upon a time in a ${word[0]} land far, far away, there lived a(n) ${word[1]} named ${word[2]}. ${word[2]} was known for being the ${word[3]} ${word[1]} in the entire kingdom. One day, ${word[2]} decided to go on a(n) ${word[4]} adventure. They packed their ${word[5]} and set off towards the ${word[4]} bridge. Along the way, ${word[2]} encountered a talking ${word[7]} who offered some ${word[6]} advice. The ${word[7]} said, "If you want to find the ${word[8]} treasure, you must first pass through the scary forest, cross the ${word[9]}, and climb the ${word[10]} mountain. Excited and ${word[11]}, ${word[2]} followed the ${word[7]}'s directions. As they entered the scary forest, they heard a ${word[12]} and saw a ${word[13]} ${word[14]} floating in the air. ${word[2]} reached out and ${word[15]} the ${word[14]}, which turned out to be a magical ${word[16]} that granted them the power to ${word[17]} ${word[18]}. With their newfound ability, ${word[2]} continued their journey. They crossed the ${word[9]} on a boat made of ${word[19]} and reached the ${word[20]} mountain. After a(n) ${word[21]} climb, they found the treasure chest at the mountain's peak. Hoorah! ${word[2]} celebrated the victory and shared memories of their wacky adventure in the ${word[0]} land.`;
+
+  // Check if the input value is empty
+  if (word[0].trim() === '' || word[1].trim() === '' || word[2].trim() === '' || word[3].trim() === '' || word[4].trim() === '' || word[5].trim() === '' || word[6].trim() === '' || word[7].trim() === '' || word[8].trim() === '' || word[9].trim() === '' || word[10].trim() === '' || word[11].trim() === '' || word[12].trim() === '' || word[13].trim() === '' || word[14].trim() === '' || word[15].trim() === '' || word[16].trim() === '' || word[17].trim() === '' || word[18].trim() === '' || word[19].trim() === '' || word[20].trim() === '' || word[21].trim() === ''){
+    // Display an alert
+    alert('Please answer all questions before submitting the form.');
+  } 
+  else {
+    document.getElementById('output').innerHTML = story;
+  }
+}
