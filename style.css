@@ -1,0 +1,53 @@
+*{
+  font-family: Tahoma;
+  color: white;
+  }
+body{
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://img.freepik.com/free-photo/beautiful-floral-field_23-2150788907.jpg?t=st=1698185276~exp=1698188876~hmac=55f8d9ab235e80f2e51bc65b6c83432ee4cb06e686566cc3fd38954cd583889b&w=360') ;
+  }
+
+@keyframes bounce{
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+  }
+
+.animated-text{
+  animation: bounce 2s infinite;
+  }
+.typewriter-container {
+  width: 375px; 
+  overflow: hidden; 
+}
+.typewriter-text{
+  white-space: nowrap;
+  overflow: hidden; 
+  border-right: 1px solid white;
+  animation: typing 2s steps(30, end);
+}
+
+@keyframes typing{
+  from { width: 0; }
+  to { width: 100%; }
+}
+input[type="text"] {
+  width: 200px;
+  height: 30px;
+  background-color: white;
+  color: black;
+  }
+input[type="text"]:hover {
+  background-color: lightblue;
+  border: 2px solid;
+  border-image: linear-gradient(45deg, #ff5733, #5cff33);
+  border-image-slice: 1;
+  }    
+input[type="submit"]{
+  color: black;
+  background-color: lightblue;
+  }
+input[type="submit"]:hover{
+  color: black;
+  background-color: pink;
+  }
+
